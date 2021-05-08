@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Zvqr Wedding</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+		<div class="box">
+			<div class="fields">
+				<form action="insert.php" method="post">  
+					<div id="guestNameSection">
+						<label>Вашето име: </label>
+						<input type="text" id="MainGuestName" name="mainGuestName" value="" required />
+					</div>
+					<div id="areYouComing">
+						<label>Ще присъствате ли?</label>  
+						<label><input id="MainGuestIsComing" name="mainGuestIsComing" type="radio" value="" onclick="showQuestionSection();setBooleanValue('MainGuestIsComing')" required /> Да</label>
+						<label><input id="MainGuestIsComing" name="mainGuestIsComing" type="radio" value="" onclick="hideQuestionSection();setBooleanValue('MainGuestIsComing')"/> Не</label>
+					</div>
+					<div id="questionSection">
+						<div id="guestCoupleSection">
+							<label>Ще взимате ли половинка?</label>  
+							<label><input id="MainGuestIsComingWithSomebody" name="mainGuestIsComingWithSomebody" type="radio" value="" onclick="showCoupleField();setBooleanValue('MainGuestIsComingWithSomebody')"/> Да</label>
+							<label><input id="MainGuestIsComingWithSomebody" name="mainGuestIsComingWithSomebody" type="radio" value="" onclick="hideCoupleField();setBooleanValue('MainGuestIsComingWithSomebody')"/> Не</label>				
+						</div>
+						<div id="hidden-views-couple">
+							<label>Име на половинката: </label>  
+							<input type="text" id="hidden-views-couple-input" name="plusOneName" value="" />
+						</div>
+						<div id="kidSection">
+							<label>Ще идвате ли с дете?</label>
+							<label><input id="MainGuestIsComintWithKid" name="mainGuestIsComintWithKid" type="radio" value="" onclick="showKidsField();setBooleanValue('MainGuestIsComintWithKid');"/> Да</label>
+							<label><input id="MainGuestIsComintWithKid" name="mainGuestIsComintWithKid" type="radio" value="" onclick="hideKidsField();setBooleanValue('MainGuestIsComintWithKid');"/> Не</label>
+						</div>
+						<div id="hidden-views-howManyKids" display='none'>
+							<label>С колко деца ще идвате?</label>
+							<input id="KidsCount" name="kidsCount"  type="text" value="" "/>
+						</div>
+						<div id="hidden-views-kids">
+							<label>Да му предвидим ли столче?</label>  
+							<label><input id="shouldProvideKidsChair" name="shouldProvideKidsChair" type="radio" onclick="setBooleanValue('shouldProvideKidsChair');" value="" /> Да</label>
+							<label><input id="shouldProvideKidsChair" name="shouldProvideKidsChair" type="radio" onclick="setBooleanValue('shouldProvideKidsChair');" value="" /> Не</label>
+						</div>
+						<div id="foodSection">
+							<label>Вегетарианец ли сте?</label>
+							<label><input id="mainGuestIsVegetarian" name="mainGuestIsVegetarian" type="radio" onclick="setBooleanValue('mainGuestIsVegetarian');" value="" /> Да</label>
+							<label><input id="mainGuestIsVegetarian" name="mainGuestIsVegetarian" type="radio" onclick="setBooleanValue('mainGuestIsVegetarian');" value="" /> Не</label>
+						</div>
+						<div id="hidden-views-couple-food">
+							<label>Половинката ви вегетарианец ли е?</label>  
+							<label><input id="guestPlusOneIsVegetarian" name="guestPlusOneIsVegetarian" type="radio" onclick="setBooleanValue('guestPlusOneIsVegetarian');" value="" /> Да</label>
+							<label><input id="guestPlusOneIsVegetarian" name="guestPlusOneIsVegetarian" type="radio" onclick="setBooleanValue('guestPlusOneIsVegetarian');" value="" /> Не</label>
+						</div>
+						<div id="additionalInfo">
+							<label>Допълнителна информация:</label>
+							<div class="field"><textarea name="message" rows="6" id="Guests_AdditionalNote"></textarea></div>
+						</div>
+					</div>
+					<div id="submitSection">
+						<input type="submit" value="Изпрати" class="btn btn-primary" />
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			function showQuestionSection() { 
+				document.getElementById('questionSection').style.display = 'inline';
+				document.getElementById("MainGuestIsComingWithSomebody").required = true;
+				document.getElementById("MainGuestIsComintWithKid").required = true;
+				document.getElementById("mainGuestIsVegetarian").required = true;
+			}	
+				</script>
+		<script type="text/javascript">
+			function hideQuestionSection() { 
+				document.getElementById('questionSection').style.display = 'none';
+				document.getElementById("MainGuestIsComingWithSomebody").required = false;
+				document.getElementById("MainGuestIsComintWithKid").required = false;
+				document.getElementById("mainGuestIsVegetarian").required = false;
+			}	
+				</script>
+		<script type="text/javascript">
+			function showCoupleField() { 
+				document.getElementById('hidden-views-couple-food').style.display = 'inline';
+				document.getElementById('hidden-views-couple').style.display = 'inline'
+				document.getElementById("hidden-views-couple-input").required = true;
+				document.getElementById("guestPlusOneIsVegetarian").required = true;
+			}	
+				</script>
+		<script type="text/javascript">
+					function hideCoupleField() { 
+						document.getElementById('hidden-views-couple-food').style.display = 'none';
+						document.getElementById('hidden-views-couple-food').checked = false;
+						document.getElementById('hidden-views-couple').style.display = 'none';
+						document.getElementById('hidden-views-couple-input').value = "";
+						document.getElementById('hidden-views-couple-input').required = false;
+						document.getElementById("guestPlusOneIsVegetarian").required = false;
+			}
+				</script>
+		<script type="text/javascript">
+					function showKidsField() { 
+						document.getElementById('hidden-views-kids').style.display = 'inline';
+						document.getElementById("shouldProvideKidsChair").required = true;
+						document.getElementById('hidden-views-howManyKids').style.display = 'inline';
+						document.getElementById('KidsCount').value = '1';
+			}
+				</script>
+		<script type="text/javascript">
+					function hideKidsField() { 
+						document.getElementById('hidden-views-kids').style.display = 'none';
+						document.getElementById("shouldProvideKidsChair").checked = false;
+						document.getElementById("shouldProvideKidsChair").required = false;
+						document.getElementById('hidden-views-howManyKids').style.display = 'none';
+						document.getElementById('KidsCount').value = '0';
+			}
+				</script>
+		<script type="text/javascript">
+					function setBooleanValue(id) { 
+					if(document.getElementById(id).checked){
+					document.getElementById(id).value='True';
+					}
+					else{document.getElementById(id).value = 'False'}					
+					}
+				</script>
+	</body>
+</html>
+		
