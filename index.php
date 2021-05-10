@@ -11,13 +11,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/nav.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
     <!-- Header -->
     <header id="header">
-        <h1>Ani & Yordan Wedding</h1>
+        <div id="desktop">
+		<h1>Ani & Yordan Wedding</h1>
         <nav>
             <ul>
                 <li><a href="#intro">Зверове</a></li>
@@ -29,11 +31,27 @@
                 <li><a href="Anketa.html">Анкета</a></li>
             </ul>
         </nav>
+		</div>
+		<div class="topnav">
+		  <h1>Ani & Yordan Wedding</h1>
+		  <div id="myLinks">
+			<a href="#intro">Зверове</a>
+					<a href="#invitation">Покана</a>
+					<a href="#one">Кога и къде?</a>
+					<a href="#two">Кои сме ние</a>
+					<a href="#bestmans">Кумовете</a>
+				   <a href="#work">Често задавани въпроси</a>
+					<a href="Anketa.html">Анкета</a>
+			</div>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+</div>
     </header>
 
     <!-- Intro -->
-    <section id="intro" class="main style1 dark fullscreen">
-      
+   <section id="intro" class="main style1 dark fullscreen">
+     <!-- <img src="images/intro.jpg"> -->
     </section>
 
     <!-- One -->
@@ -131,6 +149,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				function myFunction() {
+				  var x = document.getElementById("myLinks");
+				  if (x.style.display === "block") {
+					x.style.display = "none";
+				  } else {
+					x.style.display = "block";
+				  }
+				}
+				</script>
 	</body>
 </html>

@@ -6,17 +6,20 @@
 -->
 <html>
 	<head>
-		<title>Ani & Yordan Wedding</title>
+		<title>Zvqr Wedding</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/nav.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
     <!-- Header -->
     <header id="header">
-        <h1>Ani & Yordan Wedding</h1>
+        <div id="desktop">
+		<h1>Ani & Yordan Wedding</h1>
         <nav>
             <ul>
                 <li><a href="#intro">Зверове</a></li>
@@ -28,11 +31,27 @@
                 <li><a href="Anketa.html">Анкета</a></li>
             </ul>
         </nav>
+		</div>
+		<div class="topnav">
+		  <h1>Ani & Yordan Wedding</h1>
+		  <div id="myLinks">
+			<a href="#intro">Зверове</a>
+					<a href="#invitation">Покана</a>
+					<a href="#one">Кога и къде?</a>
+					<a href="#two">Кои сме ние</a>
+					<a href="#bestmans">Кумовете</a>
+				   <a href="#work">Често задавани въпроси</a>
+					<a href="Anketa.html">Анкета</a>
+			</div>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+</div>
     </header>
 
     <!-- Intro -->
-    <section id="intro" class="main style1 dark fullscreen">
-      
+   <section id="intro" class="main style1 dark fullscreen">
+     <!-- <img src="images/intro.jpg"> -->
     </section>
 
     <!-- One -->
@@ -64,7 +83,7 @@
             <header>
                 <h2>Кога и къде?</h2>
             </header>
-            <p>31 Юли 2020</p>
+            <p>24 Юли 2021</p>
             <a href="http://garden-weddings.bg/">Комплекс Garden Weddings гр. Пловдив</a>
         </div>
         <a href="#two" class="button style2 down anchored">Next</a>
@@ -76,7 +95,7 @@
             <header>
                 <h2>Кои сме ние</h2>
             </header>
-            <p>Точно 3 години, десетки дестинации,  стотици споделени изгреви и залези, хиляди емоции и една Алина по-късно - ние решихме да затворим кръга и да го направим официално! Елате с нас да го отпразнуваме!</p>
+            <p>Точно 4 години, десетки дестинации,  стотици споделени изгреви и залези, хиляди емоции и една Алина по-късно - ние решихме да затворим кръга и да го направим официално! Елате с нас да го отпразнуваме!</p>
         </div>
         <a href="#bestmans" class="button style2 down anchored">Next</a>
     </section>
@@ -130,6 +149,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				function myFunction() {
+				  var x = document.getElementById("myLinks");
+				  if (x.style.display === "block") {
+					x.style.display = "none";
+				  } else {
+					x.style.display = "block";
+				  }
+				}
+				</script>
 	</body>
 </html>
