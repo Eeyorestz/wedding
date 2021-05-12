@@ -2227,76 +2227,96 @@ body.is-touch .main {
 @media screen and (min-width: 400px) {
 
   #intro {
-		background: url("../../images/intro.jpg");
+		background: url("../../images/desktop/intro.jpg");
 		background-size: cover;
 		background-attachment:  fixed;
 		background-position:  bottom center;
 		background-repeat: no-repeat;
 	}
 	
-	#one {
-		background: url("../../images/invitation-mobile.jpg");
+	#invitation {
+		background: url("../../images/desktop/invitation.jpg");
 		background-size: cover;
-		width: 100% auto;
-		/* background-attachment: fixed, fixed; */
-		/* background-position: top left, center center; */
+		background-attachment:  fixed;
+		background-position:  bottom center;
+		background-repeat: no-repeat;
 	}
+
+	#one {
+			background: url("../../images/desktop/one.jpg");
+			background-size: cover;
+			background-size: cover;
+			background-attachment:  fixed;
+			background-position:  bottom center;
+			background-repeat: no-repeat;
+		}
+
+	#two {
+			background: url("../../images/desktop/two.jpg");
+			background-size: cover;
+			background-size: cover;
+			background-attachment:  fixed;
+			background-position:  bottom center;
+			background-repeat: no-repeat;
+		}
+	#bestmans {
+			background: url("../../images/desktop/bestmans.jpg");
+			background-size: cover;
+			background-size: cover;
+			background-attachment:  fixed;
+			background-position:  bottom center;
+			background-repeat: no-repeat;
+		}
 }
 
 @media screen and (max-width: 400px) {
 
   #intro {
-		background: url("../../images/intro.jpg");
+		background: url("../../images/mobile/intro-mobile.jpg");
 		background-size: cover;
 		background-attachment:  fixed;
 		background-position:  bottom center;
 		background-repeat: no-repeat;
 	}
 	
-	#one {
-		background: url("../../images/invitation-mobile.jpg");
+	#invitation {
+		background: url("../../images/mobile/invitation-mobile.jpg");
 		background-size: cover;
-		width: 100% auto;
-		/* background-attachment: fixed, fixed; */
-		/* background-position: top left, center center; */
+		background-size: cover;
+		background-attachment:  fixed;
+		background-position:  bottom center;
+		background-repeat: no-repeat;
 	}
-}
 
-
-/* One */
-
-	/* #one { */
-		/* background: url("images/overlay.png"), url("../../images/one.jpg"); */
-		/* background-size: 256px 256px, cover; */
-		/* width: 100%; */
-		/* /* background-attachment: fixed, fixed; */ */
-		/* /* background-position: top left, center center; */ */
-	/* } */
-
-/* Two */
+	#one {
+			background: url("../../images/mobile/one-mobile.jpg");
+			background-size: cover;
+			background-size: cover;
+			background-attachment:  fixed;
+			background-position:  bottom center;
+			background-repeat: no-repeat;
+		}	
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/two.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
-	}
+			background: url("../../images/mobile/two-mobile.jpg");
+			background-size: cover;
+			background-size: cover;
+			background-attachment:  fixed;
+			background-position:  bottom center;
+			background-repeat: no-repeat;
+		}
+	#two div { margin-top: auto;}
 
-/* bestmans */
+	#bestmans {
+			background: url("../../images/mobile/bestmans-mobile.jpg");
+			background-size: cover;
+			background-size: cover;
+			background-attachment:  fixed;
+			background-position:  bottom center;
+			background-repeat: no-repeat;
+		}
+}
 
-#bestmans {
-    background: url("images/overlay.png"), url("../../images/bestmans.jpg");
-    background-size: 256px 256px, cover;
-    background-attachment: fixed, fixed;
-    background-position: top left, center center;
-}
-/* Invitation */
-#invitation {
-    background: url("images/overlay.png"), url("../../images/invitation.jpg");
-    background-size: 256px 256px, cover;
-    background-attachment: fixed, fixed;
-    background-position: top left, center center;
-}
 #questionSection
 {
 	display : none;
@@ -2317,14 +2337,6 @@ body.is-touch .main {
 {
 	display : none;
 }
-
-#guestCount{
-	-webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;   
-}
- 
 
 /* Contact */
 

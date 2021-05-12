@@ -17,103 +17,103 @@
 	<body class="is-preload">
 
     <!-- Header -->
-    <header id="header">
-        <div id="desktop">
-		<h1>Ani & Yordan Wedding</h1>
-        <nav>
-            <ul>
-                <li><a href="#intro">Зверове</a></li>
-                <li><a href="#invitation">Покана</a></li>
-                <li><a href="#one">Кога и къде?</a></li>
-                <li><a href="#two">Кои сме ние</a></li>
-                <li><a href="#bestmans">Кумовете</a></li>
-                <li><a href="#work">Често задавани въпроси</a></li>
-                <li><a href="Anketa.html">Анкета</a></li>
-            </ul>
-        </nav>
-		</div>
-		<div class="topnav">
-		  <h1>Ani & Yordan Wedding</h1>
-		  <div id="myLinks">
-			<a href="#intro">Зверове</a>
-					<a href="#invitation">Покана</a>
-					<a href="#one">Кога и къде?</a>
-					<a href="#two">Кои сме ние</a>
-					<a href="#bestmans">Кумовете</a>
-				   <a href="#work">Често задавани въпроси</a>
-					<a href="Anketa.html">Анкета</a>
+		<header id="header">
+			<div id="desktop">
+			<h1>Ani & Yordan Wedding</h1>
+				<nav>
+					<ul>
+						<li><a href="#intro">Зверове</a></li>
+						<li><a href="#invitation">Покана</a></li>
+						<li><a href="#one">Кога и къде?</a></li>
+						<li><a href="#two">Кои сме ние</a></li>
+						<li><a href="#bestmans">Кумовете</a></li>
+						<li><a href="#work">Често задавани въпроси</a></li>
+						<li><a href="Anketa.html">Анкета</a></li>
+					</ul>
+				</nav>
 			</div>
-		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			<i class="fa fa-bars"></i>
-		  </a>
-</div>
-    </header>
+			<div class="mobile">
+				<h1>Ani & Yordan Wedding</h1>
+				<div id="myLinks">
+					<a href="#intro" onclick="showHideNavigation()">Зверове</a>
+					<a href="#invitation" onclick="showHideNavigation()">Покана</a>
+					<a href="#one" onclick="showHideNavigation()">Кога и къде?</a>	
+					<a href="#two" onclick="showHideNavigation()">Кои сме ние</a>		
+					<a href="#bestmans" onclick="showHideNavigation()">Кумовете</a>
+					<a href="#work" onclick="showHideNavigation()">Често задавани въпроси</a>
+					<a href="Anketa.html" onclick="showHideNavigation()">Анкета</a>						
+				</div>
+			<a href="javascript:void(0);" class="icon" onclick="showHideNavigation()">
+				<i class="fa fa-bars"></i>
+			</a>
+			</div>
+		</header>
 
-    <!-- Intro -->
-   <section id="intro" class="main style1 dark fullscreen">
-     <!-- <img src="images/intro.jpg"> -->
-    </section>
+		<!-- Intro -->
+	   <section id="intro" class="main style1 dark fullscreen">
+		 <!-- <img src="images/intro.jpg"> -->
+		</section>
 
-    <!-- One -->
-    <section id="invitation" class="main style2 right dark fullscreen">
-        <div class="content box style2">
-            <header>
-                <h2>Покана</h2>
-                <p>
-                    Здравей,
-                </p>
-                <p>
-                    Ти си от избраните от сърцата ни хора, с които искаме за споделим този толкова специален ден!
-                    За нас е истинко удоволствие да те поканим на нашата сватба и заедно да превърнем този ден в незабравим спомен!
-                </p>
-                <p>
-                    Тук сме събрали цялата информация, която е необходимо да знаеш за нашето събитие + усмивки от старите ленти за настроение.
-                    Ще сме изключително благодарни, ако попълниш нашата анкета.
-                </p>
-            </header>
+		<!-- One -->
+		<section id="invitation" class="main style2 right dark fullscreen">
+			<div class="content box style2">
+				<header>
+					<h2>Покана</h2>
+					<p>
+						Здравей,
+					</p>
+					<p>
+						Ти си от избраните от сърцата ни хора, с които искаме за споделим този толкова специален ден!
+						За нас е истинко удоволствие да те поканим на нашата сватба и заедно да превърнем този ден в незабравим спомен!
+					</p>
+					<p>
+						Тук сме събрали цялата информация, която е необходимо да знаеш за нашето събитие + усмивки от старите ленти за настроение.
+						Ще сме изключително благодарни, ако попълниш нашата анкета.
+					</p>
+				</header>
 
-            <a href="Anketa.html">Към анкета</a>
-        </div>
-        <a href="#one" class="button style2 down anchored">Next</a>
-    </section>
+				<a href="Anketa.html">Към анкета</a>
+			</div>
+			<a href="#one" class="button style2 down anchored">Next</a>
+		</section>
 
-    <!-- One -->
-    <section id="one" class="main style2 right dark fullscreen">
-        <div class="content box style2">
-            <header>
-                <h2>Кога и къде?</h2>
-            </header>
-            <p>24 Юли 2021</p>
-            <a href="http://garden-weddings.bg/">Комплекс Garden Weddings гр. Пловдив</a>
-        </div>
-        <a href="#two" class="button style2 down anchored">Next</a>
-    </section>
+		<!-- One -->
+		<section id="one" class="main style2 right dark fullscreen">
+			<div class="content box style2">
+				<header>
+					<h2>Кога и къде?</h2>
+				</header>
+				<p>24 Юли 2021</p>
+				<a href="http://garden-weddings.bg/">Комплекс Garden Weddings гр. Пловдив</a>
+			</div>
+			<a href="#two" class="button style2 down anchored">Next</a>
+		</section>
 
-    <!-- Two -->
-    <section id="two" class="main style2 right dark fullscreen">
-        <div class="content box style2">
-            <header>
-                <h2>Кои сме ние</h2>
-            </header>
-            <p>Точно 4 години, десетки дестинации,  стотици споделени изгреви и залези, хиляди емоции и една Алина по-късно - ние решихме да затворим кръга и да го направим официално! Елате с нас да го отпразнуваме!</p>
-        </div>
-        <a href="#bestmans" class="button style2 down anchored">Next</a>
-    </section>
-    <!-- Bestmans -->
+		<!-- Two -->
+		<section id="two" class="main style2 right dark fullscreen">
+			<div class="content box style2">
+				<header>
+					<h2>Кои сме ние</h2>
+				</header>
+				<p>Точно 4 години, десетки дестинации,  стотици споделени изгреви и залези, хиляди емоции и една Алина по-късно - ние решихме да затворим кръга и да го направим официално! Елате с нас да го отпразнуваме!</p>
+			</div>
+			<a href="#bestmans" class="button style2 down anchored">Next</a>
+		</section>
+		<!-- Bestmans -->
 
-    <section id="bestmans" class="main style2 right dark fullscreen">
-        <div class="content box style2">
-            <header>
-                <h2>Кумовете</h2>
-            </header>
-            <p>Пепито и Павел Гюрушеви</p>
-        </div>
-        <a href="#work" class="button style2 down anchored">Next</a>
-    </section>
+		<section id="bestmans" class="main style2 right dark fullscreen">
+			<div class="content box style2">
+				<header>
+					<h2>Кумовете</h2>
+				</header>
+				<p>Пепито и Павел Гюрушеви</p>
+			</div>
+			<a href="#work" class="button style2 down anchored">Next</a>
+		</section>
 
 
-    <!-- Work -->
-    <section id="work" class="main style3 primary">
+		<!-- Work -->
+		<section id="work" class="main style3 primary">
         <div class="content">
             <header>
                 <h2>Често задавани въпроси</h2>
@@ -121,7 +121,7 @@
                 <p>- Не. Сватбата ще е вечерта, а комплексът е от отворен тип – шатри за градинско парти. В случай че прогнозата обещава дъжд обаче (което предвид времето и мястото е много слабо вероятно) може да вземете връхна дреха със себе си. </p>
 
                 <p><b>Има ли къде да се паркира?</b></p>
-                <p>- Комплексът разполага със собствен паркинг с дотатъчно паркоместа.</p>
+                <p>- Комплексът разполага със собствен паркинг с дотатъчно паркоместа. За тези, които искат да вземат колите си преди 14:00, моля паркирайте извън двора на комплекса, като там трябва да има достатъчно места.</p>
 
                 <p><b>Мога ли да доведа детето/децата си?</b></p>
                 <p>- Разбира се. Молим да се обърнете към нас с предпочитанията към детското меню и дали ще бъде нужно отделно столче за най-малките ни гости.</p>
@@ -136,7 +136,7 @@
                 <p>- Ако сте предвидили да ни уважите с поднасянето на цветя или букети, може да ги замените с книги за домашната ни библиотека.</p>
 
                 <p><b>Още нещо, което трябва да знам:</b></p>
-                <p>- За тези от вас, които нямат честта да са от Пловдив вероятно не знаят, че там има доста комари. Комплексът осигурява репеленти срещу тези колкова нехаресвани  насекоми. Ако някой от вас обаче има особено отношение към тях, може да се подготви предварително с собствени продукти.</p>
+                <p>- За тези от вас, които нямат честта да са от Пловдив, вероятно не знаят, че там има доста комари. Комплексът осигурява репеленти срещу тези толкова нехаресвани  насекоми. Ако някой от вас обаче има особено отношение към тях, може да се подготви предварително със собствени продукти.</p>
             </header>
         </div>
     </section>
@@ -150,7 +150,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
-				function myFunction() {
+				function showHideNavigation() {
 				  var x = document.getElementById("myLinks");
 				  if (x.style.display === "block") {
 					x.style.display = "none";
