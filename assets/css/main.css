@@ -2322,7 +2322,6 @@ body.is-touch .main {
 	display : none;
 }
 
-
 #hidden-views-couple
 {
 	display : none;
@@ -2334,6 +2333,11 @@ body.is-touch .main {
 }
 
 #hidden-views-kids
+{
+	display : none;
+}
+
+#hidden-views-howManyKids
 {
 	display : none;
 }
