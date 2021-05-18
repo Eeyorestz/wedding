@@ -20,13 +20,21 @@ function connectToDB() {
 function getGuests() {
 	$connection = connectToDB();
 	return $connection
-		->query("SELECT * FROM guests LIMIT 500")
+		->query("SELECT * FROM guests WHERE main_guest_is_coming = 1 LIMIT 500")
+		->fetchAll();
+}
+
+function getNotComingGuests() {
+	$connection = connectToDB();
+	return $connection
+		->query("SELECT * FROM guests WHERE main_guest_is_coming = 0 LIMIT 500")
 		->fetchAll();
 }
 
 function drawTable(){
 	$guests = getGuests();
-	// var_dump($guests);
+	$notComingGuests = getNotComingGuests();
+	
 	echo "<table border=1>"; 
 		echo "<tr>"; 
 			echo "<td>ID</td>"; 
@@ -59,4 +67,20 @@ function drawTable(){
 	echo "</table>";
 }
 
+function drawNotComingTable(){
+	$notComingGuests = getNotComingGuests();
+	
+	echo "<table border=1>"; 
+		echo "<tr>"; 		
+			echo "<td>Guest name</td>"; 
+		echo "</tr>"; 
+		foreach($notComingGuests as $guest){
+			echo "<tr>"; 
+				echo "<td>" . $guest['main_guest_name']. "</td>"; 			
+			echo "</tr>"; 
+		}
+	echo "</table>";
+}
+
 drawTable();
+drawNotComingTable();
